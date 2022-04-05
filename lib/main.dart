@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,14 @@ class NinjaCard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.purple[100],
       appBar: AppBar(
-        title: Text('Ninja ID Card'),
+        title: Text(
+            'Ninja ID Card',
+          style:TextStyle(
+            color: Colors.deepPurple,
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+          )
+        ),
         backgroundColor: Colors.pink[100],
         centerTitle: true,
         elevation: 0.0,
